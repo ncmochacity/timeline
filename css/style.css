@@ -61,13 +61,13 @@ body {
       padding-left: 25px;
       cursor: pointer;
       width: 20%;
-      margin: 20px 110px 10px; }
+      margin: 20px 110px 20px; }
       @media screen and (min-width: 360px) {
         .sidebar .menus h3 {
           margin: 20px auto 20px; } }
       @media screen and (min-width: 760px) {
         .sidebar .menus h3 {
-          margin: 20px 0 10px 0; } }
+          margin: 20px 0 10px 10px; } }
       .sidebar .menus h3:before {
         content: "";
         position: absolute;
@@ -93,18 +93,18 @@ body {
           background-position: -32px 0px; }
     .sidebar .menus ul {
       list-style: none;
-      padding: 0;
+      padding: 0px;
       display: none;
       margin: 0 135px 10px;
       text-align: left; }
       @media screen and (min-width: 760px) {
         .sidebar .menus ul {
-          margin: 0 0 0 25px;
+          margin: 0px 0 0 55px;
           display: block;
           width: auto; } }
       .sidebar .menus ul.open {
         display: inline-block;
-        margin: 0 auto 10px 60px; }
+        margin: 0px auto 20px 60px; }
         @media screen and (min-width: 760px) {
           .sidebar .menus ul.open {
             margin: 0 0 0 25px;
@@ -127,14 +127,14 @@ body {
           transition: color 0.4s ease; }
   .sidebar .my-info {
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0;
     border-bottom: 1px solid #5e5e5e; }
     .sidebar .my-info .portfolio-image {
       border-radius: 50%; }
     .sidebar .my-info h1, .sidebar .my-info h2 {
       font-weight: normal; }
     .sidebar .my-info h1 {
-      font-size: 120%; }
+      font-size: 150%; }
     .sidebar .my-info h2 {
       font-size: 100%; }
     .sidebar .my-info .social {
@@ -164,3 +164,71 @@ body {
           background-position: -75px 0px; }
           .sidebar .my-info .social a.instagram:hover {
             background-position: -75px -25px; }
+
+#content {
+  width: 100%;
+  min-height: 100%;
+  background: white; }
+  @media screen and (min-width: 760px) {
+    #content {
+      float: left;
+      width: 80%; } }
+  #content .portfolio-item {
+    background: #f7f7f7; }
+    #content .portfolio-item:before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      background: #eaeaea;
+      top: 0px;
+      left: 17px;
+      bottom: 0px; }
+    #content .portfolio-item.first:before {
+      top: 30px; }
+    #content .portfolio-item .portfolio-info {
+      min-height: 100%;
+      color: #5e5e5e;
+      padding: 50px 20px 20px 40px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box; }
+      @media screen and (min-width: 760px) {
+        #content .portfolio-item .portfolio-info {
+          float: left;
+          width: 30%; } }
+      #content .portfolio-item .portfolio-info .date {
+        font-size: 110%;
+        color: black;
+        margin-bottom: 10px; }
+        #content .portfolio-item .portfolio-info .date:before {
+          content: "";
+          position: absolute;
+          width: 13px;
+          height: 11px;
+          border-radius: 50%;
+          border: 3px solid #f7f7f7;
+          background: #d35136;
+          left: -29px;
+          top: 3px; }
+      #content .portfolio-item .portfolio-info .meta {
+        color: black;
+        margin-top: 20px; }
+        #content .portfolio-item .portfolio-info .meta p {
+          margin: 0px; }
+    #content .portfolio-item .portfolio-image {
+      padding: 20px;
+      background: #f7f7f7;
+      
+      text-align: center; }
+      @media screen and (min-width: 760px) {
+        #content .portfolio-item .portfolio-image {
+          float: left;
+          width: 70%; } }
+      #content .portfolio-item .portfolio-image img {
+        width: 100%;
+        max-width: 610px;
+        height: auto; }
+      #content .portfolio-item .portfolio-image div.loading img {
+        width: auto;
+        height: auto; }
